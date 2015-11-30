@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+    Student Name:Venkataraghava Purimetla
+    URL Address: http://omega.uta.edu/~vxp3130/project2/map.html
+-->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display House Prices on a Map</title>
+    <meta charset="utf-8"/>
+
+
+
+
+
+    <script type="text/javascript" src="map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key = "AIzaSyB93puW1Ky2nmhCvN2MmGv2ycYO9mCTxs8&sensor=false"></script>
+<script>
+
+</script>
+
+
+
+  </head>
+  <body onload = "initialize()"> 
+    <form>
+       <label> Address: <input type="text" id="address"/></label>
+       <input type="button" onclick="sendRequest();" value="Search"/>
+       <input type="reset" onclick="initialize();" value="Clear"/>
+    </form>
+
+             
+    <div id="output">&nbsp;</div>
+
+ <div id="output2">&nbsp;</div>
+ <div id="output3">&nbsp;</div>
+ <div id="output4">&nbsp;</div>
+  <div id="lat">&nbsp;</div>
+  <div id="lon">&nbsp;</div>
+
+<div id="googleMap" style="width:600px;height:500px;"></div>
+<textarea id="output1" rows="10" cols="50"></textarea>
+ </body>
+</html>
+
